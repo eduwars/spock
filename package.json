@@ -1,0 +1,32 @@
+{
+  "name": "spock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build ./tsconfig.service.json",
+    "build:clean": "tsc --build ./tsconfig.service.json --clean",
+    "watch": "tsc --build ./tsconfig.service.json --watch",
+    "start:partner": "tsnd --respawn --transpileOnly --watch ['./services/partner-graphql/src/*'] ./services/partner-graphql/src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.9",
+    "reflect-metadata": "^0.1.13",
+    "ts-node-dev": "^1.0.0-pre.49",
+    "typescript": "^3.9.5",
+    "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.ts": "prettier --write"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "target": "es2019",
+    "outDir": "./build",
+    "composite": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["**/__tests__", "**/__mocks__", "node_modules"]
+}

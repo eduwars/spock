@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "lib": [
+      "es6"
+    ],
+    "types": [
+      "reflect-metadata",
+      "node"
+    ],
+    "sourceMap": true,
+    "outDir": "build",
+    "removeComments": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": false,
+    "strictFunctionTypes":  true,
+    "noResolve": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "declaration": true,
+    "declarationMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "baseUrl": "."
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
